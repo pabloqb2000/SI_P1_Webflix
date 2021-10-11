@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock%}
+
+
+{% block content %}
+<div class="form-content">
+  <div class="form-div">
+    <form action="/action_page.php">
+      <div class="form-inputs">
+        <h1>Register</h1>
+        <label for="email"><h3>Email</h5></label>
+        <input type="text" placeholder="marianorajoy@mimail.es" name="email" id="email">
+        <label for="username"><h3>Username</h5></label>
+        <input type="text" placeholder="username" name="username" id="username">
+        <label for="password"><h3>Password</h5></label>
+        <input type="password" placeholder="password" name="password" id="password">
+        <label for="confirmation"><h3>Confirm Password</h5></label>
+        <input type="password" placeholder="password" name="confirmation" id="confirmation">
+        <label for="credit-card"><h3>Credit card</h5></label>
+        <input type="text" placeholder="ES00-0000-0000-0000" name="credit-card" id="credit-card">
+        <label for="direction"><h3>Direction</h5></label>
+        <input type="text" placeholder="ES00-0000-0000-0000" name="direction" id="direction">
+      </div>
+      <a href="login">Already have a user?</a><br>
+      <button>Register</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
