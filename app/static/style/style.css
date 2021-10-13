@@ -467,5 +467,10 @@ body {
   display: inline-block;
 }
 
+.pwd_popup{
+  display: none;
+  background-color: grey;
+  color: red;
+}
 
 
